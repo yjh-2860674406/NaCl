@@ -1,2 +1,10 @@
-# NaCl
-即时通讯
+# NaCl即时通讯系统
+
+## 技术栈（纯后端）
+
+SpringCloud
+
+SpringSecurity
+
+Redis
+

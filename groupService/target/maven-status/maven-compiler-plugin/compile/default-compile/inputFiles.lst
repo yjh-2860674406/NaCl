@@ -1,0 +1,11 @@
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\entity\GR.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\adapter\Impl\GRAdapterImpl.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\dto\GRDTO.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\adapter\GRAdapter.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\GroupServiceApplication.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\service\GRService.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\entity\UserInfo.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\controller\GroupController.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\dao\GRDao.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\domain\vo\GRVO.java
+D:\Code\JAVA\NaCl\groupService\src\main\java\cn\nacl\service\Impl\GRServiceImpl.java

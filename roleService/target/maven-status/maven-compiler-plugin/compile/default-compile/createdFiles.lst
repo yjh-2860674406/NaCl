@@ -1,0 +1,13 @@
+cn\nacl\controller\RoleVO.class
+cn\nacl\domain\entity\UserRole.class
+cn\nacl\domain\entity\Role.class
+cn\nacl\service\Impl\UserRoleServiceImpl.class
+cn\nacl\dao\UserRoleDao.class
+cn\nacl\RoleServiceApplication.class
+cn\nacl\controller\RoleController.class
+cn\nacl\service\Impl\RoleServiceImpl.class
+cn\nacl\service\UserRoleService.class
+cn\nacl\dao\RoleDao.class
+cn\nacl\domain\entity\UserRoleId.class
+cn\nacl\service\RoleService.class
+cn\nacl\controller\UserRoleVO.class

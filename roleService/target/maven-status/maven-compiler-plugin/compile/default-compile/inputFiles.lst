@@ -1,0 +1,10 @@
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\dao\UserRoleDao.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\domain\entity\UserRole.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\service\UserRoleService.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\RoleServiceApplication.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\service\RoleService.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\service\Impl\RoleServiceImpl.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\dao\RoleDao.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\service\Impl\UserRoleServiceImpl.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\domain\entity\Role.java
+D:\Code\JAVA\NaCl\roleService\src\main\java\cn\nacl\controller\RoleController.java

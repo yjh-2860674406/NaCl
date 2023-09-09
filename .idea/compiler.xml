@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="messageWebsocketService" />
+        <module name="common" />
+        <module name="gatewayService" />
+        <module name="messageService" />
+        <module name="groupService" />
+        <module name="controlService" />
+        <module name="roleService" />
+        <module name="userService" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="authService" target="11" />
+      <module name="ear" target="1.5" />
+      <module name="ejbs" target="1.5" />
+      <module name="logging" target="1.5" />
+      <module name="postService" target="11" />
+      <module name="primary-source" target="1.5" />
+      <module name="projects" target="1.5" />
+      <module name="redisService" target="11" />
+      <module name="relationService" target="11" />
+      <module name="servlet" target="1.5" />
+      <module name="servlets" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NaCl" options="" />
+      <module name="authService" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="controlService" options="-parameters" />
+      <module name="gatewayService" options="-parameters" />
+      <module name="groupService" options="-parameters" />
+      <module name="messageService" options="-parameters" />
+      <module name="messageWebsocketService" options="-parameters" />
+      <module name="postService" options="-parameters" />
+      <module name="redisService" options="-parameters" />
+      <module name="relationService" options="-parameters" />
+      <module name="roleService" options="-parameters" />
+      <module name="userService" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+cn\nacl\GateWayServiceApplication.class
+cn\nacl\config\SecurityConfig.class
+cn\nacl\controller\LoginController.class
+cn\nacl\entity\User.class
+cn\nacl\entity\LoginUser.class
+cn\nacl\entity\Role.class
+cn\nacl\manager\UserSecurityContextRepository.class
+cn\nacl\service\UserService.class
+cn\nacl\dao\UserDao.class
+cn\nacl\service\Impl\UserServiceImpl.class
+cn\nacl\manager\UserAuthenticationManager.class
+cn\nacl\service\Impl\RoleClient.class
+cn\nacl\config\RedisValue.class
+cn\nacl\entity\UserRoleId.class
+cn\nacl\entity\UserRole.class

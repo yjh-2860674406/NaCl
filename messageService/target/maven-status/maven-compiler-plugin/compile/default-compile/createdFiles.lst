@@ -1,0 +1,13 @@
+cn\nacl\domain\adapter\MessageAdapter.class
+cn\nacl\MessageServiceApplication.class
+cn\nacl\domain\entity\Message.class
+cn\nacl\domain\adapter\Impl\MessageAdapterImpl.class
+cn\nacl\service\Impl\MessageServiceImpl.class
+cn\nacl\domain\entity\GRVO.class
+cn\nacl\domain\vo\MessageVO.class
+cn\nacl\controller\MessageController.class
+cn\nacl\domain\dto\MessageDTO.class
+cn\nacl\config\RedisValue.class
+cn\nacl\dao\MessageDao.class
+cn\nacl\service\MessageService.class
+cn\nacl\service\client\GroupClient.class

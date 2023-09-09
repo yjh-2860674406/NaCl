@@ -1,0 +1,11 @@
+cn\nacl\domain\entity\GR.class
+cn\nacl\domain\vo\GRVO.class
+cn\nacl\controller\GroupController.class
+cn\nacl\domain\adapter\GRAdapter.class
+cn\nacl\service\GRService.class
+cn\nacl\GroupServiceApplication.class
+cn\nacl\domain\dto\GRDTO.class
+cn\nacl\dao\GRDao.class
+cn\nacl\domain\adapter\Impl\GRAdapterImpl.class
+cn\nacl\domain\entity\UserInfo.class
+cn\nacl\service\Impl\GRServiceImpl.class

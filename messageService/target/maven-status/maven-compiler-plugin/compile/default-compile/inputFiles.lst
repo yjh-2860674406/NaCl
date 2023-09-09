@@ -1,0 +1,13 @@
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\MessageServiceApplication.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\vo\MessageVO.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\controller\MessageController.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\entity\GRVO.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\dao\MessageDao.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\service\MessageService.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\service\client\GroupClient.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\service\Impl\MessageServiceImpl.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\adapter\MessageAdapter.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\adapter\Impl\MessageAdapterImpl.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\entity\Message.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\domain\dto\MessageDTO.java
+D:\Code\JAVA\NaCl\messageService\src\main\java\cn\nacl\config\RedisValue.java

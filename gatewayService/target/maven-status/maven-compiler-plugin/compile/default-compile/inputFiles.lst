@@ -1,0 +1,14 @@
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\entity\Role.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\manager\UserSecurityContextRepository.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\service\Impl\UserServiceImpl.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\entity\LoginUser.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\service\Impl\RoleClient.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\controller\LoginController.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\service\UserService.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\entity\User.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\GateWayServiceApplication.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\manager\UserAuthenticationManager.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\config\RedisValue.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\entity\UserRole.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\config\SecurityConfig.java
+D:\Code\JAVA\NaCl\gatewayService\src\main\java\cn\nacl\dao\UserDao.java
