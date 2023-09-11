@@ -26,11 +26,11 @@ public class MessageWebSocket {
     private String dev; // 登陆设备
     private static final Lock lock = new ReentrantLock(); // 发布消息时的锁
     private static final ArrayList<String> devList = new ArrayList<>(); // 合法设备列表
-    private static final ConcurrentHashMap<String, Session> sessionPool = new ConcurrentHashMap<>(); // 连接池
     private static RedisCache redisCache; // Redis 缓存
     private final KafkaUtils.KafkaStreamClient kafkaClient = KafkaUtils.bulidClient().createKafkaStreamClient("127.0.0.1", 9092, "Message");
     private final MessageSubscribeListener subscribeListener = new MessageSubscribeListener(this);
     private final long secret = -Math.abs(new Random().nextLong());
+    private Session session = null;
 
 
     static {
@@ -57,12 +57,11 @@ public class MessageWebSocket {
                 log.info("连接结果: 取消，原因: 非法设备");
                 session.close(new CloseReason(CloseReason.CloseCodes.getCloseCode(1000), "非法设备请求"));
             }
-            // TODO 重复登陆，退出上一个登陆的设备
+            // 重复登陆，退出上一个登陆的设备
             KafkaUtils.bulidServer().createKafkaStreamServer("127.0.0.1:9092").sendMsg("Message" + uid, devList.indexOf(dev), devList.size(), Long.toString(secret));
-            sessionPool.put(uid + dev, session);
-            // 存入池中
             this.uid = uid;
             this.dev = dev;
+            this.session = session;
             kafkaClient.subscribe("Message" + uid, devList.indexOf(dev));
             subscribeListener.setKafkaConsumer(kafkaClient.getKafkaConsumer());
             subscribeListener.call();
@@ -79,10 +78,8 @@ public class MessageWebSocket {
         try {
             log.info("Uid为:" + uid + "的用户取消在设备" + dev + "上的连接");
             // 打印日志
-            sessionPool.get(uid + dev).close();
+            session.close();
             // 关闭session
-            sessionPool.remove(uid + dev);
-            // 从连接池中移去
             kafkaClient.close();
             subscribeListener.setTag(false);
         } catch (Exception e) {
@@ -115,7 +112,6 @@ public class MessageWebSocket {
         // 设置消息为已读状态
         redisCache.setCacheMapValue(RedisValue.message + uid, mid, message);
         // 将已读状态的消息存回缓存
-        Session session = sessionPool.get(uid + dev);
         if (session != null && session.isOpen()) {
             try {
                 lock.lock();

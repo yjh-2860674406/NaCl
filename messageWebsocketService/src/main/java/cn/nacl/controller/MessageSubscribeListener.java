@@ -39,7 +39,7 @@ public class MessageSubscribeListener implements Callable {
 
     @Override
     public Object call() throws Exception {
-
-        return this;
+        pollMsg();
+        return null;
     }
 }
