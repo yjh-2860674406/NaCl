@@ -8,3 +8,4 @@ SpringSecurity
 
 Redis
 
+Kafka
