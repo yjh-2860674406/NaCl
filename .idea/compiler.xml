@@ -21,6 +21,7 @@
       <module name="authService" target="11" />
       <module name="ear" target="1.5" />
       <module name="ejbs" target="1.5" />
+      <module name="kafkaInitService" target="11" />
       <module name="logging" target="1.5" />
       <module name="postService" target="11" />
       <module name="primary-source" target="1.5" />
@@ -39,6 +40,7 @@
       <module name="controlService" options="-parameters" />
       <module name="gatewayService" options="-parameters" />
       <module name="groupService" options="-parameters" />
+      <module name="kafkaInitService" options="-parameters" />
       <module name="messageService" options="-parameters" />
       <module name="messageWebsocketService" options="-parameters" />
       <module name="postService" options="-parameters" />
