@@ -8,16 +8,15 @@ import cn.nacl.domain.entity.GRVO;
 import cn.nacl.domain.entity.Message;
 import cn.nacl.service.MessageService;
 import cn.nacl.service.client.GroupClient;
+import cn.nacl.utils.kafka.KafkaUtils;
 import cn.nacl.utils.redis.RedisCache;
 import cn.nacl.utils.snow.SnowFlakeUtil;
 import org.springframework.context.annotation.DependsOn;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class MessageServiceImpl implements MessageService {
@@ -31,7 +30,15 @@ public class MessageServiceImpl implements MessageService {
     @Resource
     private RedisCache redisCache;
 
+    private static final List<String> devList = new ArrayList<>();
 
+    static {
+        devList.add("android");
+        devList.add("ios");
+        devList.add("windows");
+        devList.add("linux");
+        devList.add("mac");
+    }
 
     /**
      * 将消息保存至 redis 缓存中
@@ -72,8 +79,12 @@ public class MessageServiceImpl implements MessageService {
      */
     @Override
     public void sendMessage (MessageDTO messageDTO, List<GRVO> grvoList) {
-        if (grvoList == null) redisCache.convertAndSend(RedisValue.channel + messageDTO.getRuid().toString(), messageDTO.getMid().toString());
-        else for (GRVO grvo : grvoList) redisCache.convertAndSend(RedisValue.channel + grvo.getUid().toString(), messageDTO.getMid().toString());
+        if (grvoList == null) sendMessage(messageDTO.getRuid().toString(), messageDTO.getMid().toString());
+        else for (GRVO grvo : grvoList) sendMessage(grvo.getUid().toString(), messageDTO.getMid().toString());
+    }
+
+    private void sendMessage (String uid, String mid) {
+        for (String dev : devList) KafkaUtils.bulidServer().createKafkaStreamServer("127.0.0.1:9092").sendMsg("Message" + uid, devList.indexOf(dev), devList.size(), mid);
     }
 
     /**
